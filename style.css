@@ -1,0 +1,38 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.cell {
+  display: inline-block;
+  height: 70px;
+  width: 70px;
+  padding: 20px;
+  text-align: center;
+  line-height: 35px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.cell + .cell {
+  margin-left: 20px;
+}
+
+.cell.taken {
+  color: white;
+}
+
+.cell.picking-factors-for {
+  border: 2px solid black;
+}
+
+.cell.color-blue {
+  background-color: blue;
+}
+
+.row + .row {
+  margin-top: 20px;
+}
